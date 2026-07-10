@@ -248,3 +248,5 @@ The frontend utilizes a custom **3D Performance Layer** to provide an immersive 
 ___
 > [!IMPORTANT]
 > The ZK Prover Engine currently supports Groth16 proofs generated via Circom circuits. The **Batch Aggregator** module enables the protocol to combine multiple state transitions into a single on-chain verification, significantly reducing gas costs.
+
+<!-- updated details -->
