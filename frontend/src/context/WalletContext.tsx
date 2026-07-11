@@ -284,3 +284,5 @@ export const useWalletContext = () => {
 
 
 // Wallet context provider fully initialized
+
+// error boundary check
