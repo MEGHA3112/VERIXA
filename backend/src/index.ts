@@ -106,3 +106,5 @@ httpServer.listen(PORT, () => {
 });
 
 // End of main server file
+
+// cors origins
