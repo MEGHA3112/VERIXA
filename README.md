@@ -8,10 +8,10 @@
 
 > Cryptographic certainty. Zero trust. Infinite interoperability.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://verixa.vercel.app/)
-[![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://verixa-backend.onrender.com/)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://verixa-vert.vercel.app/)
+[![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://verixa-backend-il3o.onrender.com)
 [![Demo Video](https://img.shields.io/badge/🎬_Full_Walkthrough-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1vFOfGjbB2ehYbs4v8T5p3AgA8TBAU9KX/view?usp=drive_link)
-[![GitHub](https://img.shields.io/badge/📦_Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pritam9078/VERIXA)
+[![GitHub](https://img.shields.io/badge/📦_Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MEGHA3112/VERIXA)
 
 </div>
 
@@ -19,13 +19,13 @@
 
 ## 🚀 Live Links
 
-- **🌐 Live Demo (Frontend):** [https://verixa.vercel.app/](https://verixa.vercel.app/)
+- **🌐 Live Demo (Frontend):** [https://verixa-vert.vercel.app/](https://verixa-vert.vercel.app/)
 
-- **⚡ Backend API Server:** [https://verixa-backend.onrender.com/](https://verixa-backend.onrender.com/)
+- **⚡ Backend API Server:** [https://verixa-backend-il3o.onrender.com](https://verixa-backend-il3o.onrender.com)
 
 - **🎬 Demo Video (Full Walkthrough):** [Watch on Google Drive](https://drive.google.com/file/d/1vFOfGjbB2ehYbs4v8T5p3AgA8TBAU9KX/view?usp=drive_link)
 
-- **📋 User Feedback Documentation:** [View on Google Sheets](https://docs.google.com/spreadsheets/d/1VcUZPcTXMmdjDYeT-9VbAfSA58MvmCEYN6NGFkEs5-E/edit?resourcekey=&gid=1148580754#gid=1148580754)
+- **📋 User Feedback Documentation:** [View on Google Sheets](https://docs.google.com/spreadsheets/d/1omQC7xvhDBhGGtpdJ5upl_fiUjbMHAvw_zlc8IE7McQ/edit?resourcekey=&gid=701959953#gid=701959953)
 
 - **📐 System Architecture:** [ARCHITECTURE.md](./ARCHITECTURE.md)
 
@@ -157,7 +157,7 @@ Verixa implements a sovereign identity model where your wallet is your passport.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Pritam9078/VERIXA.git
+git clone https://github.com/MEGHA3112/VERIXA.git
 cd VERIXA
 
 # 2. Install dependencies
