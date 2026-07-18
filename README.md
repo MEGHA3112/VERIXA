@@ -79,27 +79,20 @@ No intermediaries. No assumptions. Just math.
 <div align="center">
 
 > The Verixa Interface — A clean, high-fidelity command center designed for cryptographic precision.
-
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/f595fb8b-9832-4c25-8762-af892053de7a" width="400" alt="Dashboard Overview"/></td>
-    <td><img src="https://github.com/user-attachments/assets/c3479d91-54ec-43ea-b738-19f1f7e0e68f" width="400" alt="Protocol Interface"/></td>
+    <td><img src="https://github.com/user-attachments/assets/34f25fd9-a46f-409f-bf1c-174280b0c6f1" width="400" alt="Screenshot 1"/></td>
+    <td><img src="https://github.com/user-attachments/assets/495b9666-6605-400a-b0c6-5125c3dd87da" width="400" alt="Screenshot 2"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/d20e8fce-f22d-40de-a959-85f34e418a11" width="400" alt="Proof Batching View"/></td>
-    <td><img src="https://github.com/user-attachments/assets/a4996092-eb42-48a7-931d-2d8785970304" width="400" alt="Governance Panel"/></td>
+    <td><img src="https://github.com/user-attachments/assets/b21644bd-8106-4f33-baea-2798ce9b33f4" width="400" alt="Screenshot 3"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7a665330-59dd-4107-9c69-00133aebbb1a" width="400" alt="Screenshot 4"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/3450215c-fcd3-4ad8-a658-701ec7b232c1" width="400" alt="DID Identity"/></td>
-    <td><img src="https://github.com/user-attachments/assets/b7b2ab73-3b45-44c4-ac25-392d04276e82" width="400" alt="Oracle Feeds"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/3166d9db-fccf-405c-beec-73381d17084e" width="400" alt="Chronos Engine"/></td>
-    <td><img src="https://github.com/user-attachments/assets/340e8191-27f4-4f4a-94dd-223a928a846e" width="400" alt="Analytics"/></td>
+    <td><img src="https://github.com/user-attachments/assets/6071c693-466e-4dd5-9add-8890d57e795e" width="400" alt="Screenshot 5"/></td>
+    <td><img src="https://github.com/user-attachments/assets/396de543-e26b-4632-a6b7-72386a692ebb" width="400" alt="Screenshot 6"/></td>
   </tr>
 </table>
-
-<img src="https://github.com/user-attachments/assets/196b7d45-59e3-46e8-baf1-db6ac562384f" width="280" alt="Mobile View"/>
 
 </div>
 
@@ -110,13 +103,18 @@ No intermediaries. No assumptions. Just math.
 The following Stellar Testnet wallets have verifiably interacted with the Verixa Protocol. Inspect any on [Stellar Expert](https://stellar.expert/explorer/testnet).
 
 ```
+GB3Q3R3W3CS6BF3MCF3UH2Q3X6NWGPXU55LBXKXGJT5QHYQUNIL4WTBG
 GB6U7APEDEHKWVXDTVO4UE5E3UDSMEOKB3DCLJ4PMAY3ABSOFK7PBUD7
-GCBOJCFQBP5INN3ACBZYUVOH3RJBMC2IYAGPYFMAM5J3PBFBIOG6GVMK
 GB5ZDX52U37QX4YSK4M4KA7LG7D42DXDBCRGRPQ5GPK42MFVBEGGPQQV
-GCGEXUG76FMVLCQHMVEUIQ2GPDEZSSNXQZQITISFUR433LZCD4UPGMYT
-GDYWYDOBPPM2XFQS2N7OA2XYO66C24OSBDGASSYAU7V3V4UHFIQYWCRL
 GA23DEPEOPIH6ZU2KC25WE3AAV37BNE2RKCEOLVLAKINFID2XLUEG6BI
 GA3SFMGCV3JJ5UBZAY6OIOQHCCP33N4CDRTRI53KQHJ3DIHZXAGW4NHC
+GCBOJCFQBP5INN3ACBZYUVOH3RJBMC2IYAGPYFMAM5J3PBFBIOG6GVMK
+GDKV3HUVCYDUDERC6FVUSYFCZCT5UPQLNEZYF7PZ2JPT2LQK2ZKA37BE
+GAJLCBFAR2RKQ5R2BJV2LAC2G3BQDQOZJELWAKX4LFQUPJBVH2WA6FB7
+GB5W5XZSOJ2MSSEAM262YN4MHJOWBYV3QRYUBQ2T3VJK7H5JGA2GF6JA
+GAV5URBSIROK7Q7LYOONGGOCANBH56DPO4K7ZKTJ5BRF4C55HDQPG2HF
+
+
 ```
 
 ---
