@@ -104,3 +104,5 @@ app.get('/health', (req: any, res: any) => {
 httpServer.listen(PORT, () => {
   console.log(`Verixa server running on port ${PORT} (HTTP + WebSockets)`);
 });
+
+// End of main server file
