@@ -325,3 +325,5 @@ export const regenerateApiKey = async (req: any, res: Response) => {
     res.status(500).json({ message: 'Failed to regenerate API key', error: err.message });
   }
 };
+
+// Auth controller functions exported
