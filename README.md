@@ -256,3 +256,5 @@ Built with ❤️ and cryptographic conviction for a **decentralized future.**
 *Verixa Protocol — Where trust is a proof, not a promise.*
 
 </div>
+
+<!-- End of README -->
