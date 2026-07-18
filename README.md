@@ -10,7 +10,7 @@
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://verixa-vert.vercel.app/)
 [![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://verixa-backend-il3o.onrender.com)
-[![Demo Video](https://img.shields.io/badge/🎬_Full_Walkthrough-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1vFOfGjbB2ehYbs4v8T5p3AgA8TBAU9KX/view?usp=drive_link)
+[![Demo Video](https://img.shields.io/badge/🎬_Full_Walkthrough-Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1CuDCoJ5bQqvDinPmUCBDK1gz97_HtXD1/view)
 [![GitHub](https://img.shields.io/badge/📦_Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MEGHA3112/VERIXA)
 
 </div>
@@ -23,13 +23,13 @@
 
 - **⚡ Backend API Server:** [https://verixa-backend-il3o.onrender.com](https://verixa-backend-il3o.onrender.com)
 
-- **🎬 Demo Video (Full Walkthrough):** [Watch on Google Drive](https://drive.google.com/file/d/1vFOfGjbB2ehYbs4v8T5p3AgA8TBAU9KX/view?usp=drive_link)
+- **🎬 Demo Video (Full Walkthrough):** [Watch on Google Drive](https://drive.google.com/file/d/1CuDCoJ5bQqvDinPmUCBDK1gz97_HtXD1/view)
 
 - **📋 User Feedback Documentation:** [View on Google Sheets](https://docs.google.com/spreadsheets/d/1omQC7xvhDBhGGtpdJ5upl_fiUjbMHAvw_zlc8IE7McQ/edit?resourcekey=&gid=701959953#gid=701959953)
 
 - **📐 System Architecture:** [ARCHITECTURE.md](./ARCHITECTURE.md)
 
-- **🐦 Social Flex:** [Protocol Deep Dive on X](https://x.com/i/status/2047345248519749953)
+- **🐦 Social Flex:** [Protocol Deep Dive on X](https://x.com/i/status/2078596936744235204)
 
 ---
 
