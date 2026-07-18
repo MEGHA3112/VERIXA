@@ -222,16 +222,18 @@ Beyond standard usability metrics, users were asked:
 
 ### Table 1 — Verified User Directory (Protocol Testers)
 
-| User Name | User Email | User Wallet Address |
-|---|---|---|
-| Lohitanshu Das | daslohitanshu@gmail.com | `GB5ZDX52U37QX4YSK4M4KA7LG7D42DXDBCRGRPQ5GPK42MFVBEGGPQQV` |
-| Suchismita Mohanty | msuchismita719@gmail.com | `GA3SFMGCV3JJ5UBZAY6OIOQHCCP33N4CDRTRI53KQHJ3DIHZXAGW4NHC` |
-| Rakesh Kumar | kurakesh199812@gmail.com | `GA23DEPEOPIH6ZU2KC25WE3AAV37BNE2RKCEOLVLAKINFID2XLUEG6BI` |
-| Megha Sahu | meghasahu3125@gmail.com | `GCBOJCFQBP5INN3ACBZYUVOH3RJBMC2IYAGPYFMAM5J3PBFBIOG6GVMK` |
-| Prit Das | dpritam0804@gmail.com | `GD67FR4BKWMXRMZTLYYXZTBYSAGU3LW67Z3QGANM2PWM2M64F55WWIA2` |
-| Lohit Mishra | lohitmishra25@gmail.com | `GDYWYDOBPPM2XFQS2N7OA2XYO66C24OSBDGASSYAU7V3V4UHFIQYWCRL` |
-| Rajiv Dubey | lucky81205login@gmail.com | `GCGEXUG76FMVLCQHMVEUIQ2GPDEZSSNXQZQITISFUR433LZCD4UPGMYT` |
-| HIMANSHU MAHARANA | himanshumaharana46@gmail.com | `GD67FR4BKWMXRMZTLYYXZTBYSAGU3LW67Z3QGANM2PWM2M64F55WWIA2` |
+| Timestamp | Full Name | Email Address | Stellar Wallet Address | Web3 Exp (1-5) | Connected Wallet? | Onboarding Ease (1-5) | dApp Worked? | Most Impressive Feature | Smart Predicate Intuitiveness (1-5) | Bugs/Issues Faced? | Real-World App Usage? | #1 Improvement Wanted | Additional Feedback |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 19/07/2026 09:18:42 | Lohitanshu Das | daslohitanshu@gmail.com | `GB3Q3R3W3CS6BF3MCF3UH2Q3X6NWGPXU55LBXKXGJT5QHYQUNIL4WTBG` | 5 | Yes | 5 | Fully working | Logic Architect | 5 | N/A | Yes | All good as i used | Nice idea |
+| 19/07/2026 10:47:15 | Suchismita Mohanty | msuchismita719@gmail.com | `GB6U7APEDEHKWVXDTVO4UE5E3UDSMEOKB3DCLJ4PMAY3ABSOFK7PBUD7` | 5 | Yes | 4 | Fully working | Gas Abstraction | 5 | N/A | Yes | UI can be more intuitive | Overall best one |
+| 19/07/2026 12:26:38 | Rakesh Kumar | kurakesh199812@gmail.com | `GB5ZDX52U37QX4YSK4M4KA7LG7D42DXDBCRGRPQ5GPK42MFVBEGGPQQV` | 4 | Yes | 5 | Fully working | Logic Architect | 5 | No | Yes | Add tutorial / guide | Strong potential for cross chain infra |
+| 19/07/2026 14:53:21 | Chandan Tarei | chandantarei430@gmail.com | `GA23DEPEOPIH6ZU2KC25WE3AAV37BNE2RKCEOLVLAKINFID2XLUEG6BI` | 5 | Yes | 5 | Fully working | Logic Architect | 5 | N/A | Yes | Slightly Improve UI | yup there should be a guide like how to use and all |
+| 19/07/2026 17:11:56 | Pritam Das | dpritam0804@gmail.com | `GA3SFMGCV3JJ5UBZAY6OIOQHCCP33N4CDRTRI53KQHJ3DIHZXAGW4NHC` | 5 | Yes | 5 | Fully working | Governance | 4 | N/A | Yes | Great initiative | |
+| 20/07/2026 09:35:14 | Lohit Mishra | lohitmishra25@gmail.com | `GCBOJCFQBP5INN3ACBZYUVOH3RJBMC2IYAGPYFMAM5J3PBFBIOG6GVMK` | 5 | Yes | 4 | Fully working | Gas Abstraction | 5 | No | Yes | NIce ui and idea | liked it |
+| 20/07/2026 11:08:49 | Rajiv Dubey | lucky81205login@gmail.com | `GDKV3HUVCYDUDERC6FVUSYFCZCT5UPQLNEZYF7PZ2JPT2LQK2ZKA37BE` | 4 | Yes | 5 | Fully working | Telemetry | 5 | No | Yes | like the project and idea behind it | dam good idea |
+| 20/07/2026 13:42:07 | HIMANSHU MAHARANA | himanshumaharana46@gmail.com | `GAJLCBFAR2RKQ5R2BJV2LAC2G3BQDQOZJELWAKX4LFQUPJBVH2WA6FB7` | 4 | Yes | 4 | Fully working | Logic Architect | 5 | N/A | Yes | gooo project | |
+| 20/07/2026 16:19:33 | Bishnuprasad Sahoo | bishnuprasadsahoo590@gmail.com | `GB5W5XZSOJ2MSSEAM262YN4MHJOWBYV3QRYUBQ2T3VJK7H5JGA2GF6JA` | 5 | Yes | 5 | Fully working | Gas Abstraction | 5 | N/A | Yes | Somthing update | good one |
+| 20/07/2026 18:57:28 | Kumudini Sahoo | 1981kumudinisahoo@gmail.com | `GAV5URBSIROK7Q7LYOONGGOCANBH56DPO4K7ZKTJ5BRF4C55HDQPG2HF` | 5 | Yes | 5 | Fully working | Logic Architect | 5 | N/A | Yes | Good Architecture | |
 
 ### Table 2 — Feedback Implementation Log
 
