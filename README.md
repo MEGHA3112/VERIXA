@@ -260,3 +260,5 @@ Built with ❤️ and cryptographic conviction for a **decentralized future.**
 <!-- End of README -->
 
 <!-- testnet expansion -->
+
+<!-- integration guide final -->
