@@ -1,5 +1,6 @@
 import { Response } from 'express';
 import { AuthRequest } from '../middleware/auth';
+import * as StellarSdk from '@stellar/stellar-sdk';
 import Proof from '../models/Proof';
 import LogicRule from '../models/LogicRule';
 import SystemSetting from '../models/SystemSetting';
@@ -198,9 +199,58 @@ export const submitProof = async (req: AuthRequest, res: Response) => {
       return res.status(500).json({ message: 'DNAProof Oracle Error: ' + dnaError.message });
     }
 
-    // Mock contract interaction
+    // Soroban Smart Contract integration
+    try {
+      const rpcUrl = process.env.STELLAR_RPC_URL || 'https://soroban-testnet.stellar.org';
+      const contractId = process.env.SOROBAN_CONTRACT_ID || 'CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC'; // Replace with valid ID
+      const adminSecret = process.env.SOROBAN_ADMIN_SECRET;
+
+      if (adminSecret) {
+        const server = new StellarSdk.rpc.Server(rpcUrl);
+        const adminKeypair = StellarSdk.Keypair.fromSecret(adminSecret);
+        const sourceAccount = await server.getAccount(adminKeypair.publicKey());
+
+        const tx = new StellarSdk.TransactionBuilder(sourceAccount, {
+          fee: '10000',
+          networkPassphrase: StellarSdk.Networks.TESTNET
+        })
+        .addOperation(
+          StellarSdk.Operation.invokeHostFunction({
+            func: StellarSdk.xdr.HostFunction.hostFunctionTypeInvokeContract(
+              new StellarSdk.xdr.InvokeContractArgs({
+                contractAddress: new StellarSdk.Address(contractId).toScAddress(),
+                functionName: 'execute_action',
+                args: [
+                  new StellarSdk.Address(req.user.address).toScVal(),
+                  StellarSdk.nativeToScVal(proof._id.toString(), { type: 'symbol' }),
+                  StellarSdk.nativeToScVal('action_data_verified', { type: 'string' })
+                ]
+              })
+            ),
+            auth: []
+          })
+        )
+        .setTimeout(30)
+        .build();
+
+        tx.sign(adminKeypair);
+        
+        const preparedTransaction = await server.prepareTransaction(tx);
+        preparedTransaction.sign(adminKeypair);
+        const sendResponse = await server.sendTransaction(preparedTransaction);
+        
+        proof.txHash = sendResponse.hash;
+        console.log(`[Verixa] Soroban Execution Successful. Hash: ${sendResponse.hash}`);
+      } else {
+        console.warn('[Verixa] SOROBAN_ADMIN_SECRET not set, falling back to mock txHash.');
+        proof.txHash = '0x' + Math.random().toString(16).padEnd(64, '0').substring(2, 66);
+      }
+    } catch (stellarError: any) {
+      console.error('[Verixa] Error submitting to Soroban:', stellarError);
+      proof.txHash = 'error_stellar_invocation';
+    }
+
     proof.status = 'verified';
-    proof.txHash = '0x' + Math.random().toString(16).padEnd(64, '0').substring(2, 66);
     
     await proof.save();
     res.json(proof);

@@ -22,6 +22,8 @@ import {
   API_BASE
 } from '../services/api';
 import { signActionRequest } from '../services/signing';
+import * as StellarSdk from '@stellar/stellar-sdk';
+import freighter from '@stellar/freighter-api';
 
 export default function DeveloperDashboard() {
   const router = useRouter();
@@ -241,6 +243,49 @@ export default function DeveloperDashboard() {
       addNotification('Please authorize deployment in your wallet...', 'success');
       const auth = await signActionRequest(wallet.address, 'CREATE_RULE', `RuleName: ${formState.name}\nChain: ${formState.targetChain}`);
       
+      // Soroban Smart Contract Integration
+      try {
+        addNotification('Connecting to Soroban network...', 'success');
+        const contractId = process.env.NEXT_PUBLIC_SOROBAN_REGISTRY_ID || 'CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC';
+        const server = new StellarSdk.rpc.Server('https://soroban-testnet.stellar.org');
+        const sourceAccount = await server.getAccount(wallet.address);
+        
+        const tx = new StellarSdk.TransactionBuilder(sourceAccount, {
+          fee: '10000',
+          networkPassphrase: StellarSdk.Networks.TESTNET
+        })
+        .addOperation(
+          StellarSdk.Operation.invokeHostFunction({
+            func: StellarSdk.xdr.HostFunction.hostFunctionTypeInvokeContract(
+              new StellarSdk.xdr.InvokeContractArgs({
+                contractAddress: new StellarSdk.Address(contractId).toScAddress(),
+                functionName: 'add_rule',
+                args: [
+                  new StellarSdk.Address(wallet.address).toScVal(),
+                  StellarSdk.nativeToScVal(formState.name, { type: 'string' })
+                ]
+              })
+            ),
+            auth: []
+          })
+        )
+        .setTimeout(30)
+        .build();
+
+        const preparedTx = await server.prepareTransaction(tx);
+        const signedXdr = await freighter.signTransaction(preparedTx.toXDR(), { networkPassphrase: StellarSdk.Networks.TESTNET });
+        const signedTxXdrStr = typeof signedXdr === 'string' ? signedXdr : (signedXdr as any).signedTxXdr;
+        const signedTx = StellarSdk.TransactionBuilder.fromXDR(signedTxXdrStr, StellarSdk.Networks.TESTNET);
+        const sendResponse = await server.sendTransaction(signedTx as any);
+        
+        console.log('Soroban Rule Registration Hash:', sendResponse.hash);
+        addNotification('Registered rule on Soroban Contract.', 'success');
+      } catch (stellarError: any) {
+        console.error('Soroban Integration Error:', stellarError);
+        // We will log the error but allow the backend rule creation to proceed for fallback.
+        addNotification('Contract integration error. Proceeding with off-chain.', 'error');
+      }
+
       await createRule(token, {
         ...formState,
         conditions: { condition: formState.logic, type: formState.conditionType },
